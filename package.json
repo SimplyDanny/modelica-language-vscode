@@ -1,0 +1,30 @@
+{
+    "name": "modelica",
+    "displayName": "Modelica",
+    "description": "Modelica language support including syntax highlighting, bracket matching and some useful snippets",
+    "version": "0.0.1",
+    "publisher": "SimplyDanny",
+    "engines": {
+        "vscode": "^1.5.0"
+    },
+    "categories": [
+        "Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "modelica",
+            "aliases": ["Modelica", "modelica"],
+            "extensions": [".mo",".mos"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "modelica",
+            "scopeName": "source.modelica",
+            "path": "./syntaxes/modelica.tmLanguage"
+        }],
+        "snippets": [{
+            "language": "modelica",
+            "path": "./snippets/snippets.json"
+        }]
+    }
+}
