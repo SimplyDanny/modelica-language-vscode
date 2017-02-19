@@ -126,21 +126,21 @@
 				<key>1</key>
 				<dict>
 					<key>name</key>
-					<string>entity.name.type</string>
+					<string>keyword</string>
 				</dict>
 				<key>2</key>
 				<dict>
 					<key>name</key>
-					<string>keyword</string>
+					<string>entity.name.type</string>
 				</dict>
 				<key>3</key>
 				<dict>
 					<key>name</key>
-					<string>comment.line</string>
+					<string>string.quoted.double</string>
 				</dict>
 			</dict>
 			<key>match</key>
-			<string>\b((model|class|record|block|package)\s+\w+\s*(".*")*)</string>
+			<string>\b(model|class|record|block|package)\s+(\w+)\s*(".*")*</string>
 		</dict>
 		<dict>
 			<key>captures</key>
@@ -189,11 +189,11 @@
 				<key>1</key>
 				<dict>
 					<key>name</key>
-					<string>constant.string</string>
+					<string>string.quoted.double</string>
 				</dict>
 			</dict>
 			<key>match</key>
-			<string>["\w\)](\s+".*"\s*);</string>
+			<string>["\w\)\]](\s+".*"\s*);</string>
 		</dict>
 		<dict>
 			<key>begin</key>
@@ -201,7 +201,7 @@
 			<key>end</key>
 			<string>"</string>
 			<key>name</key>
-			<string>constant.string</string>
+			<string>string.quoted.double</string>
 			<key>patterns</key>
 			<array>
 				<dict>
