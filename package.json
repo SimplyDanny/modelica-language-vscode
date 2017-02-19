@@ -2,15 +2,23 @@
     "name": "modelica",
     "displayName": "Modelica",
     "description": "Modelica language support including syntax highlighting, bracket matching and some useful snippets",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "publisher": "SimplyDanny",
     "license": "See LICENSE.txt",
     "engines": {
         "vscode": "^1.5.0"
     },
     "categories": [
-        "Languages"
+        "Languages",
+        "Snippets"
     ],
+    "homepage": "https://github.com/SimplyDanny/modelica-language-vscode",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/SimplyDanny/modelica-language-vscode.git"
+    },
+    "icon": "images/icon.png",
+    "bugs": "https://github.com/SimplyDanny/modelica-language-vscode/issues",
     "contributes": {
         "languages": [{
             "id": "modelica",

@@ -12,13 +12,13 @@ Both grammar and snippets are imported from this [implementation](https://github
 
 ### Colorization
 
-![colorization](images/colorization.png)
+![colorization](https://github.com/SimplyDanny/modelica-language-vscode/raw/master/images/colorization.png)
 
 ### Snippets
 
-![snippets-editor](images/snippets-editor.png)
+![snippets-editor](https://github.com/SimplyDanny/modelica-language-vscode/raw/master/images/snippets-editor.png)
 
-![snippets-command-palette](images/snippets-command-palette.png)
+![snippets-command-palette](https://github.com/SimplyDanny/modelica-language-vscode/raw/master/images/snippets-command-palette.png)
 
 ## Usage
 
