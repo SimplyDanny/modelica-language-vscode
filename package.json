@@ -4,6 +4,7 @@
     "description": "Modelica language support including syntax highlighting, bracket matching and some useful snippets",
     "version": "0.0.1",
     "publisher": "SimplyDanny",
+    "license": "See LICENSE.txt",
     "engines": {
         "vscode": "^1.5.0"
     },
