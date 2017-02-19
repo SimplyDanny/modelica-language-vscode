@@ -1,65 +1,40 @@
-# modelica README
+# Modelica in Visual Studio Code
 
-This is the README for your extension "modelica". After writing up a brief description, we recommend including the following sections.
+This extension adds support for the Modelica language to Visual Studio Code.
+
+
+## Source
+
+Both grammar and snippets are imported from this [implementation](https://github.com/BorisChumichev/modelicaSublimeTextPackage) in SublimeText.
+
 
 ## Features
 
-Describe specific features of your extension including screenshots of your extension in action. Image paths are relative to this README file.
+### Colorization
 
-For example if there is an image subfolder under your extension project workspace:
+![colorization](images/colorization.png)
 
-\!\[feature X\]\(images/feature-x.png\)
+### Snippets
 
-> Tip: Many popular extensions utilize animations. This is an excellent way to show off your extension! We recommend short, focused animations that are easy to follow.
+![snippets-editor](images/snippets-editor.png)
 
-## Requirements
+![snippets-command-palette](images/snippets-command-palette.png)
 
-If you have any requirements or dependencies, add a section describing those and how to install and configure them.
+## Usage
 
-## Extension Settings
+### Install the extension in VS Code
 
-Include if your extension adds any VS Code settings through the `contributes.configuration` extension point.
+* Open the command palette using `Ctrl+Shift+P`
+* Type `ext install Modelica` in the command palette
 
-For example:
+### Select Modelica as a language
 
-This extension contributes the following settings:
+* On the bottom-right corner, click on the *select language mode* button, if you have created a new file it should display *Plain Text*
+* Select *Modelica* in the list of languages.
 
-* `myExtension.enable`: enable/disable this extension
-* `myExtension.thing`: set to `blah` to do something
+Alternatively, saving the file with a `.mo` or `.mos` extension will allow VS Code to understand that it is a Modelica file and automatically select the language correctly.
+Additional extensions can be connected to the language in any `settings.json` file using the `"files.associations"` setting.
 
-## Known Issues
+### Using snippets
 
-Calling out known issues can help limit users opening duplicate issues against your extension.
-
-## Release Notes
-
-Users appreciate release notes as you update your extension.
-
-### 1.0.0
-
-Initial release of ...
-
-### 1.0.1
-
-Fixed issue #.
-
-### 1.1.0
-
-Added features X, Y, and Z.
-
------------------------------------------------------------------------------------------------------------
-
-## Working with Markdown
-
-**Note:** You can author your README using Visual Studio Code.  Here are some useful editor keyboard shortcuts:
-
-* Split the editor (`Cmd+\` on OSX or `Ctrl+\` on Windows and Linux)
-* Toggle preview (`Shift+CMD+V` on OSX or `Shift+Ctrl+V` on Windows and Linux)
-* Press `Ctrl+Space` (Windows, Linux) or `Cmd+Space` (OSX) to see a list of Markdown snippets
-
-### For more information
-
-* [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
-* [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
-
-**Enjoy!**
+Just start to type and choose a snippet that may be proposed. Alternatively, use `Ctrl+Shift+P` to open the command palette and type `Insert Snippet` to see a list of all possible snippets to choose from.
