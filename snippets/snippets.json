@@ -1,67 +1,79 @@
 {
+  "comments": {
+    "prefix": "/*",
+    "body": "/* $1 */",
+    "description": "Modelica comment",
+    "scope": "source.modelica"
+  },
   "block": {
     "prefix": "block",
-    "body": "\nblock ${1} \"${2}\"\n  ${3}\nequation\n  ${4}\nend ${1};\n",
+    "body": "block $1\n\t$2\nend $1;",
     "description": "Modelica block definition",
     "scope": "source.modelica"
   },
   "class": {
     "prefix": "class",
-    "body": "\nclass ${1:ClassName} \"${2:Description}\"\n  ${3}\nequation\n  ${4}\nend ${1:ClassName};\n",
-    "description": "Modelica class",
+    "body": "class ${1:ClassName} \"${2:Description}\"\n\t${3}\nend ${1:ClassName};",
+    "description": "Modelica class definition",
     "scope": "source.modelica"
   },
   "connect": {
     "prefix": "connect",
-    "body": "\nconnect(${1:connector1}, ${2:connector2});\n",
-    "description": "Modelica connect-equation",
+    "body": "connect(${1:connector1}, ${2:connector2});",
+    "description": "Modelica connect equation",
     "scope": "source.modelica"
   },
   "connector": {
     "prefix": "connector",
-    "body": "\nconnector ${1}\n  ${2}\n  flow ${3};\nend ${1};\n",
+    "body": "connector ${1}\n\t${2}\n\tflow ${3};\nend ${1};",
     "description": "Modelica fluid connector definition",
     "scope": "source.modelica"
   },
   "for": {
     "prefix": "for",
-    "body": "\nfor ${1:i} in ${2:enum} loop\n  ${3}\nend for;\n",
+    "body": "for $1 in $2:$3 loop\n\t$4\nend for;",
     "description": "Modelica for loop",
+    "scope": "source.modelica"
+  },
+  "while": {
+    "prefix": "while",
+    "body": "while $1 loop\n\t$2\nend while;",
+    "description": "Modelica while loop",
     "scope": "source.modelica"
   },
   "function": {
     "prefix": "function",
-    "body": "\nfunction ${1:FunctionName}\n  input ${2}\n  output ${3}\nalgorithm \n  ${4}\nend ${1:FunctionName};\n",
+    "body": "function $1\n\t$2\nalgorithm\n\t$3\nend $1;",
     "description": "Modelica function definition",
     "scope": "source.modelica"
   },
   "if": {
     "prefix": "if",
-    "body": "\nif ${1:condition} then\n  ${2}\nend if;\n",
+    "body": "if $1 then\n\t$2\nend if;",
     "description": "Modelica: if statement",
     "scope": "source.modelica"
   },
   "model": {
     "prefix": "model",
-    "body": "\nmodel ${1:Model} \"${2:Description}\"\n  ${3}\nequation\n  ${4}\nend ${1:Model};\n",
+    "body": "model $1 \"${2:Description}\"\n\t$3\nend $1;",
     "description": "Modelica model definition",
     "scope": "source.modelica"
   },
   "package": {
     "prefix": "package",
-    "body": "\npackage ${1:Package} \"${2:Description}\"\n  ${3}\nend ${1:Package};\n",
-    "description": "Modelica package",
+    "body": "package $1 \"${2:Description}\"\n\t$3\nend $1;",
+    "description": "Modelica package definition",
     "scope": "source.modelica"
   },
   "record": {
     "prefix": "record",
-    "body": "\nrecord ${1:Record} \"${2:Description}\"\n  ${3}\nend ${1:Record};\n",
-    "description": "Modelica record",
+    "body": "record $1\n\t$2\nend $1;",
+    "description": "Modelica record definition",
     "scope": "source.modelica"
   },
   "when": {
     "prefix": "when",
-    "body": "\nwhen ${1:expression} then\n  ${2}\nend when;\n",
+    "body": "when $1 then\n\t$2\nend when;",
     "description": "Modelica when clause",
     "scope": "source.modelica"
   }
