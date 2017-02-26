@@ -1,39 +1,39 @@
 {
-    "name": "modelica",
-    "displayName": "Modelica",
-    "description": "Modelica language support including syntax highlighting, bracket matching and some useful snippets",
-    "version": "0.0.2",
-    "publisher": "SimplyDanny",
-    "license": "See LICENSE.txt",
-    "engines": {
-        "vscode": "^1.5.0"
-    },
-    "categories": [
-        "Languages",
-        "Snippets"
-    ],
-    "homepage": "https://github.com/SimplyDanny/modelica-language-vscode",
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/SimplyDanny/modelica-language-vscode.git"
-    },
-    "icon": "images/icon.png",
-    "bugs": "https://github.com/SimplyDanny/modelica-language-vscode/issues",
-    "contributes": {
-        "languages": [{
-            "id": "modelica",
-            "aliases": ["Modelica", "modelica"],
-            "extensions": [".mo",".mos"],
-            "configuration": "./language-configuration.json"
-        }],
-        "grammars": [{
-            "language": "modelica",
-            "scopeName": "source.modelica",
-            "path": "./syntaxes/modelica.tmLanguage"
-        }],
-        "snippets": [{
-            "language": "modelica",
-            "path": "./snippets/snippets.json"
-        }]
-    }
+  "name": "modelica",
+  "displayName": "Modelica",
+  "description": "Modelica language support including syntax highlighting, bracket matching and some useful snippets",
+  "version": "0.0.2",
+  "publisher": "SimplyDanny",
+  "license": "See LICENSE.txt",
+  "engines": {
+    "vscode": "^1.5.0"
+  },
+  "categories": [
+    "Languages",
+    "Snippets"
+  ],
+  "homepage": "https://github.com/SimplyDanny/modelica-language-vscode",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/SimplyDanny/modelica-language-vscode.git"
+  },
+  "icon": "images/icon.png",
+  "bugs": "https://github.com/SimplyDanny/modelica-language-vscode/issues",
+  "contributes": {
+    "languages": [{
+      "id": "modelica",
+      "aliases": ["Modelica", "modelica"],
+      "extensions": [".mo",".mos"],
+      "configuration": "./language-configuration.json"
+    }],
+    "grammars": [{
+      "language": "modelica",
+      "scopeName": "source.modelica",
+      "path": "./syntaxes/modelica.tmLanguage"
+    }],
+    "snippets": [{
+      "language": "modelica",
+      "path": "./snippets/snippets.json"
+    }]
+  }
 }
