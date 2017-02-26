@@ -30,7 +30,7 @@
       <key>name</key>  <string>constant.numeric</string>
     </dict>
     <dict>
-      <key>match</key> <string>\b(Real|Integer|Boolean|String)\b</string>
+      <key>match</key> <string>\b(Real|Integer|Boolean|String|enumeration|type)\b</string>
       <key>name</key>  <string>storage.type</string>
     </dict>
     <dict>
@@ -38,11 +38,11 @@
       <key>name</key>  <string>storage.modifier</string>
     </dict>
     <dict>
-      <key>match</key> <string>\b\s*([A-Z])(?:([^ ;$]+)(;)?)([.]([A-Z])(?:([^ ;$]+)(;)?)?)++\b</string>
+      <key>match</key> <string>\b\s*([A-Z])(?:([^ ;,$]+)(;)?)([.]([A-Z])(?:([^ ;,$]+)(;)?)?)++\b</string>
       <key>name</key>  <string>keyword</string>
     </dict>
     <dict>
-      <key>match</key> <string>\b(for|if|when|while|then|loop|end if|end when|end for|end while|else|elsewhen|and|break|each|elseif)\b</string>
+      <key>match</key> <string>\b(for|if|when|while|then|loop|end if|end when|end for|end while|else|elsewhen|and|break|return|each|elseif)\b</string>
       <key>name</key>  <string>keyword.control</string>
     </dict>
     <dict>
@@ -62,7 +62,7 @@
       <key>name</key>  <string>keyword.operator.assignment</string>
     </dict>
     <dict>
-      <key>match</key> <string>\b(algorithm|equation|initial equation|protected|public|register|end)\b</string>
+      <key>match</key> <string>\b(algorithm|equation|initial algorithm|initial equation|protected|public|end|pure|impure|external|encapsulated|in|inner|operator|outer)\b</string>
       <key>name</key>  <string>keyword</string>
     </dict>
     <dict>
