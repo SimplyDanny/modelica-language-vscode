@@ -2,7 +2,7 @@
   "name": "modelica",
   "displayName": "Modelica",
   "description": "Modelica language support including syntax highlighting, bracket matching and some useful snippets",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "publisher": "SimplyDanny",
   "license": "See LICENSE.txt",
   "engines": {
