@@ -12,6 +12,10 @@
     "Languages",
     "Snippets"
   ],
+  "keywords": [
+    "modelica",
+    "language"
+  ],
   "homepage": "https://github.com/SimplyDanny/modelica-language-vscode",
   "repository": {
     "type": "git",
