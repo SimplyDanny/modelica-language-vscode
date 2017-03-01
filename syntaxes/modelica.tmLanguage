@@ -38,7 +38,7 @@
       <key>name</key>  <string>storage.modifier</string>
     </dict>
     <dict>
-      <key>match</key> <string>\b\s*([A-Z])(?:([^ ;,$]+)(;)?)([.]([A-Z])(?:([^ ;,$]+)(;)?)?)++\b</string>
+      <key>match</key> <string>\b\s*([a-zA-Z])(?:([^ ;,\($]+)(;)?)([.]([a-zA-Z])(?:([^ ;,\($]+)(;)?)?)++\b</string>
       <key>name</key>  <string>keyword</string>
     </dict>
     <dict>
