@@ -34,15 +34,15 @@
       <key>name</key>  <string>storage.type</string>
     </dict>
     <dict>
-      <key>match</key> <string>\b(constant|final|parameter|expandable|replaceable|redeclare|constrainedby|import|flow|stream|input|output|discrete|connector)\b</string>
+      <key>match</key> <string>\b(constant|final|parameter|expandable|replaceable|redeclare|constrainedby|import|flow|stream|discrete|connector)\b</string>
       <key>name</key>  <string>storage.modifier</string>
     </dict>
     <dict>
-      <key>match</key> <string>\b\s*([a-zA-Z])(?:([^ ;,\($]+)(;)?)([.]([a-zA-Z])(?:([^ ;,\($]+)(;)?)?)++\b</string>
+      <key>match</key> <string>\b\s*([a-zA-Z])(?:([^ ;,:=\($]+)(;)?)([.]([a-zA-Z])(?:([^ ;,:=\($]+)(;)?)?)++\b</string>
       <key>name</key>  <string>keyword</string>
     </dict>
     <dict>
-      <key>match</key> <string>\b(for|if|when|while|then|loop|end if|end when|end for|end while|else|elsewhen|and|break|return|each|elseif)\b</string>
+      <key>match</key> <string>\b(for|if|when|while|then|loop|end if|end when|end for|end while|else|elsewhen|and|break|return|each|elseif|input|output)\b</string>
       <key>name</key>  <string>keyword.control</string>
     </dict>
     <dict>
