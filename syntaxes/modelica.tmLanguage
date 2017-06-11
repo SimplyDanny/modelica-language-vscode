@@ -31,6 +31,20 @@
     </dict>
     <dict>
       <key>match</key> <string>\b(Real|Integer|Boolean|String|enumeration|type)\b</string>
+    <dict>
+      <key>captures</key>
+      <dict>
+        <key>1</key>
+        <dict>
+          <key>name</key> <string>keyword</string>
+        </dict>
+        <key>2</key>
+        <dict>
+          <key>name</key> <string>entity.name.type</string>
+        </dict>
+      </dict>
+      <key>match</key> <string>(end)\s+((?!(if|when|for|while)).+)\s*;\s*\n</string>
+    </dict>
       <key>name</key>  <string>storage.type</string>
     </dict>
     <dict>
