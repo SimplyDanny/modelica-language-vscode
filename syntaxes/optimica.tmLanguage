@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+  <key>fileTypes</key>
+  <array>
+    <string>mop</string>
+  </array>
+
+  <key>name</key>
+  <string>Optimica</string>
+
+  <key>patterns</key>
+  <array>
+    <dict>
+      <key>captures</key>
+      <dict>
+        <key>0</key>
+        <dict>
+          <key>name</key> <string>meta.function</string>
+        </dict>
+        <key>1</key>
+        <dict>
+          <key>name</key> <string>keyword</string>
+        </dict>
+        <key>2</key>
+        <dict>
+          <key>name</key> <string>entity.name.type</string>
+        </dict>
+      </dict>
+      <key>match</key> <string>(optimization)\s+((extends\s+)?([_\w][_\w\d]*|'[^"].*')(\s+extends)?)</string>
+    </dict>
+    <dict>
+      <key>match</key> <string>\bconstraint\b</string>
+      <key>name</key>  <string>keyword</string>
+    </dict>
+    <dict>
+      <key>include</key>
+      <string>source.modelica</string>
+    </dict>
+  </array>
+
+  <key>scopeName</key> <string>source.optimica</string>
+  <key>uuid</key>      <string>53df6fac-7928-42e2-9890-f5073aaddb14</string>
+</dict>
+</plist>

@@ -24,17 +24,32 @@
   "icon": "images/icon.png",
   "bugs": "https://github.com/SimplyDanny/modelica-language-vscode/issues",
   "contributes": {
-    "languages": [{
-      "id": "modelica",
-      "aliases": ["Modelica", "modelica"],
-      "extensions": [".mo",".mos"],
-      "configuration": "./language-configuration.json"
-    }],
-    "grammars": [{
-      "language": "modelica",
-      "scopeName": "source.modelica",
-      "path": "./syntaxes/modelica.tmLanguage"
-    }],
+    "languages": [
+      {
+        "id": "modelica",
+        "aliases": ["Modelica", "modelica"],
+        "extensions": [".mo",".mos"],
+        "configuration": "./language-configuration.json"
+      },
+      {
+        "id": "optimica",
+        "aliases": ["Optimica", "optimica"],
+        "extensions": [".mop"],
+        "configuration": "./language-configuration.json"
+      }
+    ],
+    "grammars": [
+      {
+        "language": "modelica",
+        "scopeName": "source.modelica",
+        "path": "./syntaxes/modelica.tmLanguage"
+      },
+      {
+        "language": "optimica",
+        "scopeName": "source.optimica",
+        "path": "./syntaxes/optimica.tmLanguage"
+      }
+    ],
     "snippets": [{
       "language": "modelica",
       "path": "./snippets/snippets.json"
