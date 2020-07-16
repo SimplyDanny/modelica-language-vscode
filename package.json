@@ -2,14 +2,14 @@
   "name": "modelica",
   "displayName": "Modelica",
   "description": "Modelica language support including syntax highlighting, bracket matching and some useful snippets",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "publisher": "SimplyDanny",
   "license": "See LICENSE.txt",
   "engines": {
     "vscode": "^1.5.0"
   },
   "categories": [
-    "Languages",
+    "Programming Languages",
     "Snippets"
   ],
   "keywords": [
@@ -27,14 +27,25 @@
     "languages": [
       {
         "id": "modelica",
-        "aliases": ["Modelica", "modelica"],
-        "extensions": [".mo",".mos"],
+        "aliases": [
+          "Modelica",
+          "modelica"
+        ],
+        "extensions": [
+          ".mo",
+          ".mos"
+        ],
         "configuration": "./language-configuration.json"
       },
       {
         "id": "optimica",
-        "aliases": ["Optimica", "optimica"],
-        "extensions": [".mop"],
+        "aliases": [
+          "Optimica",
+          "optimica"
+        ],
+        "extensions": [
+          ".mop"
+        ],
         "configuration": "./language-configuration.json"
       }
     ],
@@ -50,9 +61,11 @@
         "path": "./syntaxes/optimica.tmLanguage"
       }
     ],
-    "snippets": [{
-      "language": "modelica",
-      "path": "./snippets/snippets.json"
-    }]
+    "snippets": [
+      {
+        "language": "modelica",
+        "path": "./snippets/snippets.json"
+      }
+    ]
   }
 }
