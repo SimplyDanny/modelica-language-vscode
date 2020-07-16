@@ -2,11 +2,9 @@
 
 This extension adds support for the Modelica and Optimica languages to Visual Studio Code.
 
-
 ## Source
 
 Both grammar and snippets are imported from this [implementation](https://github.com/BorisChumichev/modelicaSublimeTextPackage) in SublimeText.
-
 
 ## Features
 
