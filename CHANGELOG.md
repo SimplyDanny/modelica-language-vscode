@@ -1,6 +1,10 @@
 # Change Log
 All notable changes to the "Modelica" extension will be documented in this file.
 
+## [0.0.4] - 2020-07-16
+- Fixed syntax highlighting ([#3](https://github.com/SimplyDanny/modelica-language-vscode/pull/3))
+- Fixed syntax highlighting for assignments ([#4](https://github.com/SimplyDanny/modelica-language-vscode/pull/4))
+
 ## [0.0.3] - 2017-02-28
 - Improved README
 - Added example `.mo` file that has been used to make the images
